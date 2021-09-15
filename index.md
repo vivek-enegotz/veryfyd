@@ -21,13 +21,13 @@ not already exist. Each User can only have one Account.
 | password | minimum 6 chars | true     |
 
 
-Sample Request Body
+Sample Request
 
 ```json
 {
-    "name":"ABC Technologies",
-    "email: "abc@abc.com",
-    "password":"password"
+    "name": "ABC Technologies",
+    "name": "abc@tech.com",
+    "password": "password"
 }
 ```
 

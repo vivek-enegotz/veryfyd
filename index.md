@@ -50,29 +50,3 @@ Sample Request
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTQxOTY4NGI1NzQ3MDQ1OWYwZGY4NmQiLCJpYXQiOjE2MzE2ODgzMjUsImV4cCI6MTY2MzIyNDMyNX0.cu2RShELfTVGuBaOc7Z5DInJ3dCTtAayeWo8kdBnxow"
 }
 ```
-
-## Error Responses
-
-**Condition** : If Account already exists for User.
-
-**Code** : `303 SEE OTHER`
-
-**Headers** : `Location: http://testserver/api/accounts/123/`
-
-**Content** : `{}`
-
-### Or
-
-**Condition** : If fields are missed.
-
-**Code** : `400 BAD REQUEST`
-
-**Content example**
-
-```json
-{
-    "name": [
-        "This field is required."
-    ]
-}
-```

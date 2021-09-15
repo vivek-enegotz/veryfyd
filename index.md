@@ -31,11 +31,16 @@ Sample Request
 }
 ```
 
-**Data example** All fields must be sent.
-
+**Sample Response**
 ```json
 {
-    "name": "Build something project dot com"
+    "user": {
+        "name": "ABC Technologies",
+        "email": "abc@tech.com",
+        "apiKey": "9dbf585a-680e-43f7-b074-528b749c498b",
+        "requestCount": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTQxOTY4NGI1NzQ3MDQ1OWYwZGY4NmQiLCJpYXQiOjE2MzE2ODgzMjUsImV4cCI6MTY2MzIyNDMyNX0.cu2RShELfTVGuBaOc7Z5DInJ3dCTtAayeWo8kdBnxow"
 }
 ```
 

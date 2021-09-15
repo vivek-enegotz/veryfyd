@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Veryfyd API
 
 You can use the [editor on GitHub](https://github.com/vivek-enegotz/veryfyd/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

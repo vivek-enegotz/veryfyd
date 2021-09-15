@@ -31,7 +31,14 @@ Sample Request
 }
 ```
 
-**Sample Response**
+## Success Response
+
+**Condition** : If everything is OK and an Account didn't exist for this User.
+
+**Code** : `201 CREATED`
+
+**Sample response**
+
 ```json
 {
     "user": {
@@ -41,22 +48,6 @@ Sample Request
         "requestCount": 0
     },
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTQxOTY4NGI1NzQ3MDQ1OWYwZGY4NmQiLCJpYXQiOjE2MzE2ODgzMjUsImV4cCI6MTY2MzIyNDMyNX0.cu2RShELfTVGuBaOc7Z5DInJ3dCTtAayeWo8kdBnxow"
-}
-```
-
-## Success Response
-
-**Condition** : If everything is OK and an Account didn't exist for this User.
-
-**Code** : `201 CREATED`
-
-**Content example**
-
-```json
-{
-    "id": 123,
-    "name": "Build something project dot com",
-    "url": "http://testserver/api/accounts/123/"
 }
 ```
 

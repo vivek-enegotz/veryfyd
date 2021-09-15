@@ -1,30 +1,33 @@
-## Veryfyd API
+# Veryfyd API
 
-You can use the [editor on GitHub](https://github.com/vivek-enegotz/veryfyd/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**BASE URL** `https://api.veryfyd.info/v1`
 
 
-# Create User's Account
+## Create User's Account
 
 Create an Account for the authenticated User if an Account for that User does
 not already exist. Each User can only have one Account.
 
-**URL** : `/api/accounts/`
+**URL** : `/auth/signup`
 
 **Method** : `POST`
 
-**Auth required** : YES
+**Request Body** :
 
-**Permissions required** : None
+| Field    | Description     | Required |
+|----------|-----------------|----------|
+| name     | String          | true     |
+| email    | valid email     | true     |
+| password | minimum 6 chars | true     |
 
-**Data constraints**
 
-Provide name of Account to be created.
+Sample Request Body
 
 ```json
 {
-    "name": "[unicode 64 chars max]"
+    "name":"ABC Technologies",
+    "email: "abc@abc.com",
+    "password":"password"
 }
 ```
 
